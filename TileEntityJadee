@@ -1,0 +1,7 @@
+package kingoffire.tileentity;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityJadee extends TileEntity {
+
+}
