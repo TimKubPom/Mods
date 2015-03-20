@@ -1,0 +1,20 @@
+package kingoffire.client;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+import kingoffire.common.CommonProxy;
+import kingoffire.renderer.RendererJadee;
+import kingoffire.tileentity.TileEntityJadee;
+
+public class ClientProxy extends CommonProxy {
+	
+	public void registerRenderInformation() {
+		
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGumpeng.class, new RendererGumpeng());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGumpengRotate.class, new RendererGumpengRotate());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySalaWatThai.class, new RendererSalaWatThai());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityWatThai.class, new RendererWatThai());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityJadee.class, new RendererJadee());
+		
+	}
+
+}
